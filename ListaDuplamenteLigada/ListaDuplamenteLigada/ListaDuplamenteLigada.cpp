@@ -166,18 +166,6 @@ void exibirReverso()
 
 void excluirPrimeiroElemento()
 {
-	//alocar memoria
-	NO* primeiro = (NO*)malloc(sizeof(NO));
-	if (primeiro == NULL)
-	{
-		return;
-	}
-	int i;
-	//definir elemento a ser removido
-	for  (i = 0;i < NO * primeiro; i++)
-	{
-
-	}
 
 }
 void excluirUltimoElemento()
