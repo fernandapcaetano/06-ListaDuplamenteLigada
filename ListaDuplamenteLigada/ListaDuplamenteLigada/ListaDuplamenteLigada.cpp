@@ -166,11 +166,45 @@ void exibirReverso()
 
 void excluirPrimeiroElemento()
 {
-
+	 if (primeiro == NULL)
+    {
+        cout << "Lista vazia" << endl;
+        return;
+    }
+    
+    NO* aux = primeiro;
+    primeiro = primeiro->prox;
+    if (primeiro != NULL)
+    {
+        primeiro->ant = NULL;
+    }
+    else
+    {
+        ultimo = NULL;
+    }
+    
+    free(aux);
 }
 void excluirUltimoElemento()
 {
-
+	if (ultimo == NULL)
+    {
+        cout << "Lista vazia" << endl;
+        return;
+    }
+    
+    NO* aux = ultimo;
+    ultimo = ultimo->ant;
+    if (ultimo != NULL)
+    {
+        ultimo->prox = NULL;
+    }
+    else
+    {
+        primeiro = NULL;
+    }
+    
+    free(aux);
 }
 
 
